@@ -1,5 +1,4 @@
-![Main_workflow](https://github.com/Alex-Matveenko/console_game_words/actions/workflows/main-workflows.yml/badge.svg)
-
+[![Main workflow](https://github.com/Alex-Matveenko/console_game_wors/actions/workflows/main-workflows.yml/badge.svg)](https://github.com/Alex-Matveenko/console_game_wors/actions/workflows/main-workflows.yml)
 # This is console game. 
 
 #  💻
