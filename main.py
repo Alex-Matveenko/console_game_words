@@ -55,12 +55,12 @@ class Words:
                     )
 
                     self.word = input(
-                        f"{name}, введите слово на букву '{self.last_letter}': \n"
+                        f"{name}, ваше слово на букву '{self.last_letter}': \n"
                     ).lower()
 
                     while not check.check_word():
                         self.word = input(
-                            f"{name}, введите слово на букву '{self.last_letter}': \n"
+                            f"{name}, ваше слово на букву '{self.last_letter}': \n"
                         ).lower()
 
                 players.results[name] += 1
