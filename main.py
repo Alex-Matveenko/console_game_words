@@ -43,9 +43,9 @@ class Words:
         while True:
             for name in players.name_list:
                 if len(self.word_list) == 0:
-                    self.word = input(f"{name}, введите слово: \n").lower()
+                    self.word = input(f"{name}, слово: \n").lower()
                     while not check.check_word():
-                        self.word = input(f"{name}, введите слово: \n").lower()
+                        self.word = input(f"{name}, слово: \n").lower()
                 else:
                     last_word = str(self.word_list[-1])
                     self.last_letter = (
@@ -133,6 +133,7 @@ class Info:
             print(f"{key}, ввел {value} слов!")
         print("***********************")
         print(f"Всего введено слов: {len(words.word_list)}")
+        print(words.word_list)
 
     # set start info
     @staticmethod
