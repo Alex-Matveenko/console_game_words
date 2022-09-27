@@ -55,12 +55,12 @@ class Words:
                     )
 
                     self.word = input(
-                        f"""{name}, введите слово на букву "{self.last_letter}": \n"""
+                        f"{name}, введите слово на букву '{self.last_letter}': \n"
                     ).lower()
 
                     while not check.check_word():
                         self.word = input(
-                            f"""{name}, введите слово на букву "{self.last_letter}": \n"""
+                            f"{name}, введите слово на букву '{self.last_letter}': \n"
                         ).lower()
 
                 players.results[name] += 1
@@ -107,7 +107,8 @@ class Checking:
         url = (
             f"https://ru.wikipedia.org/w/index.php?search={words.word}"
             f"&title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1"
-            f"%8F:%D0%9F%D0%BE%D0%B8%D1%81%D0%BA&profile=advanced&fulltext=1&ns0=1"
+            f"%8F:%D0%9F%D0%BE%D0%B8%D1%81%D0%BA"
+            f"&profile=advanced&fulltext=1&ns0=1"
         )
         response = requests.get(url, headers=self.headers)
         soup = Bs(response.text, "lxml")
