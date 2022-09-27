@@ -1,0 +1,7 @@
+lxml~=4.9.1
+fake-useragent==0.1.11
+requests==2.28.1
+beautifulsoup4==4.11.1
+# install for codestyle
+black==22.8.0
+flake8==5.0.4
